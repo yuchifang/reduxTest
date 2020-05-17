@@ -9,7 +9,26 @@ const logger = reduxLogger.createLogger()
 const BUY_CAKE = 'BUY_CAKE'
 const BUY_ICECREAM = 'BUY_ICEREAM'
 
+/*
+state = {
+    loading: true,
+    data :[]
+    error:''k
+}
+*/
 
+/*
+action
+FETCH_USERS_REQUEST -Fetch list of users
+
+FETCH_USERS_SUCCESS -Fetch successfully
+
+FETCH_USERS_FAILURE -Error fetching the data
+
+*/
+/*
+
+*/
 function buyCake(){
     return{
         type: BUY_CAKE,
