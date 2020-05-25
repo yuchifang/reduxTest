@@ -1,7 +1,10 @@
 const redux = require('redux')
 const createStore = redux.createStore
 const applyMiddleware = redux.applyMiddleware
-
+//--
+const reduxLogger = require('redux-logger')
+const logger = reduxLogger.createLogger()
+//--
 const thunkMiddleware = require('redux-thunk').default
 
 const axios = require('axios')
@@ -73,6 +76,8 @@ const fetchUsers = () => {
     }
 }
 
+// const store = createStore(reducer,applyMiddleware(thunkMiddleware))
+//logger
 const store = createStore(reducer,applyMiddleware(thunkMiddleware))
 store.subscribe(()=>{
     console.log(store.getState())

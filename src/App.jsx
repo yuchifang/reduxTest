@@ -1,10 +1,15 @@
-import React, {Component} from 'react';
-import CakeContainer from './components/CakeContainer.jsx'
-class App extends Component { // => Component
+import React, { Component } from "react";
+import CakeContainer from "./components/CakeContainer.jsx";
+import { Provider } from "react-redux";
+import store from "./components/redux/store";
+class App extends Component {
+  // => Com3333ponent
   render() {
     return (
-      <CakeContainer />
-    )
+      <Provider store={store}>
+        <CakeContainer />
+      </Provider>
+    );
   }
 }
 
