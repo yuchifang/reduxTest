@@ -1,9 +1,9 @@
 import React, {Component} from 'react';
-
+import CakeContainer from './components/CakeContainer.jsx'
 class App extends Component { // => Component
   render() {
     return (
-      <h1>hello React</h1>
+      <CakeContainer />
     )
   }
 }
