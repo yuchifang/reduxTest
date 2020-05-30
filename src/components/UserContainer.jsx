@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react'
 import { connect } from 'react-redux'
-import { fetchUsers } from '../redux'
+import { fetchUsers } from './redux'
 
 function UserContainer({userData, fetchUsers}) {
     useEffect(()=>{
@@ -24,6 +24,7 @@ function UserContainer({userData, fetchUsers}) {
 }
 
 const mapStateToProps = state => {
+    console.log("sssssss",state)
     return {
         userData: state.user
     }

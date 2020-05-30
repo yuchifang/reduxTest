@@ -1,3 +1,9 @@
+import {
+    FETCH_USERS_REQUEST,
+    FETCH_USERS_SUCCESS,
+    FETCH_USERS_FAILURE
+} from './userTypes'
+
 const initialState = {
     loading:false,
     user:[],
@@ -5,7 +11,6 @@ const initialState = {
 }
 
 const reducer = (state = initialState ,action) => { //console.log 看看 action
-    console.log("actionaction",action)
     switch(action.type){
         case FETCH_USERS_REQUEST:
             return {
@@ -27,3 +32,6 @@ const reducer = (state = initialState ,action) => { //console.log 看看 action
         default :return state
     }
 }
+
+
+export default reducer
