@@ -6,7 +6,6 @@ function UserContainer({userData, fetchUsers}) {
     useEffect(()=>{
         fetchUsers()
     },[])
-
     return userData.loading ? (
         <h2>Loading</h2>
     ): userData.error ? (
@@ -24,7 +23,6 @@ function UserContainer({userData, fetchUsers}) {
 }
 
 const mapStateToProps = state => {
-    console.log("sssssss",state)
     return {
         userData: state.user
     }
